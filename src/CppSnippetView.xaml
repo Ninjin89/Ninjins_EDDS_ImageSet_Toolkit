@@ -1,0 +1,29 @@
+<UserControl x:Class="Ninjins_EDDS_ImageSet_Toolkit.CppSnippetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Border Background="#1E1E1E" BorderBrush="#2B2B2B" BorderThickness="1" CornerRadius="8" ClipToBounds="True">
+        <DockPanel>
+            <Border DockPanel.Dock="Top" Background="#252526" BorderBrush="#2B2B2B" BorderThickness="0,0,0,1" Padding="10,6">
+                <Grid>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock x:Name="FileLabel" Text="config.cpp" Foreground="#CCCCCC" FontWeight="SemiBold" FontSize="12" VerticalAlignment="Center"/>
+                        <Border Background="#2D2D2D" CornerRadius="4" Padding="6,2" Margin="8,0,0,0" VerticalAlignment="Center">
+                            <TextBlock x:Name="LangLabel" Text="C++" Foreground="#9CDCFE" FontSize="10" FontWeight="SemiBold"/>
+                        </Border>
+                    </StackPanel>
+                    <Button Content="Copy" Style="{StaticResource GhostButton}" HorizontalAlignment="Right" Padding="10,4" Click="OnCopy"/>
+                </Grid>
+            </Border>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" MaxHeight="240" Padding="0,8,8,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="LineBox" Grid.Column="0" FontFamily="Cascadia Code, Consolas" FontSize="12.5" Foreground="#858585" TextAlignment="Right" Margin="10,0,12,0"/>
+                    <TextBlock x:Name="CodeBox" Grid.Column="1" FontFamily="Cascadia Code, Consolas" FontSize="12.5" TextWrapping="NoWrap"/>
+                </Grid>
+            </ScrollViewer>
+        </DockPanel>
+    </Border>
+</UserControl>
