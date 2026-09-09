@@ -6,6 +6,12 @@ Windows GUI for DayZ / Enfusion textures. **PNG / EDDS** converts both ways (EDD
 
 Drop files or a whole folder in, pick a preset, click Convert. **Bulk convert** is supported: folders are scanned recursively, then every matching file is converted in one go. A published build is a single `.exe`.
 
+## Video
+
+![Ninjins EDDS and Imageset Toolkit demo](docs/demo.mp4)
+
+Same clip on [YouTube](https://www.youtube.com/watch?v=HSkTyXyX2hk).
+
 ## Screenshots
 
 <p align="center">
