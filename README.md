@@ -86,6 +86,6 @@ Output: `dist\Ninjins_EDDS_ImageSet_Toolkit.exe`
 
 Written from scratch. Format and encode/decode behavior follow:
 
-- `edds2png` (LZ4 chain decode of EDDS blocks to PNG)
+- [wrdg/edds2png](https://github.com/wrdg/edds2png) (LZ4 chain decode of EDDS blocks to PNG)
 - [woozymasta/edds](https://github.com/woozymasta/edds) (EDDS write, COPY/LZ4 table order, ENF1 header)
 - [woozymasta/imageset-packer](https://github.com/woozymasta/imageset-packer) (BGRA8 / DXT1 / DXT5 presets, mip and quality options)
